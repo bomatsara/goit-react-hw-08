@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    transition: all 300ms ease 0s;
+
+    &:hover {
+        color: var(--color-link);
+    }
+
+    .icon {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,45 @@
+.header {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    .header-wrap {
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 576px) {
+            padding: 15px;
+        }
+    }
+
+    .header-logo {
+        margin-right: auto;
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--color-link);
+    }
+
+    .header-nav {
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 18px;
+
+            a {
+                color: var(--color-text);
+
+                &:hover {
+                    color: var(--color-link-hover) !important;
+                }
+            }
+        }
+
+        &.header-nav-common {
+
+        }
+
+        &.header-nav-auth {
+            margin-left: auto;
+        }
+    }
+}
